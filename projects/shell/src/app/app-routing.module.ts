@@ -4,12 +4,11 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'admin',
-    loadChildren: () => import('admin/Module').then((m) => m.RemoteEntryModule),
+    loadChildren: () => import('admin/Module').then((m) => m.AppModule),
   },
   {
     path: 'dashboard',
-    loadChildren: () =>
-      import('dashboard/Module').then((m) => m.RemoteEntryModule),
+    loadChildren: () => import('dashboard/Module').then((m) => m.AppModule),
   },
 ];
 
