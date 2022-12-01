@@ -12,8 +12,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { IframeComponent } from './iframe/iframe.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, IframeComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
