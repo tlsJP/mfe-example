@@ -23,7 +23,7 @@
               "projects/shell/src/assets"
             ],
             "styles": [
-              "@angular/material/prebuilt-themes/deeppurple-amber.css",
+              "@angular/material/prebuilt-themes/purple-green.css",
               "projects/shell/src/styles.css"
             ],
             "scripts": [],
