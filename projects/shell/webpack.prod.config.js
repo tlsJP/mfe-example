@@ -36,9 +36,8 @@ module.exports = {
 
       // For hosts (please adjust)
       remotes: {
-        admin: "https://mfeadmin.z13.web.core.windows.net/remoteEntry.js",
-        dashboard:
-          "https://mfedashboard.z13.web.core.windows.net/remoteEntry.js",
+        admin: "https://mango-rock-0c0243e1e.2.azurestaticapps.net",
+        dashboard: "https://icy-moss-0f952f31e.2.azurestaticapps.net",
         randomApp:
           "https://victorious-wave-0753d551e.2.azurestaticapps.net/remoteEntry.js",
       },
