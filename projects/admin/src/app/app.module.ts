@@ -5,8 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { AdminComponent } from './admin/admin.component';
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AdminComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -15,5 +17,6 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
   ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [AdminComponent],
 })
 export class AppModule {}
