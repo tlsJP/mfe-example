@@ -1,0 +1,3 @@
+[submodule "projects/random-app"]
+	path = projects/random-app
+	url = jalbert-costco@vs-ssh.visualstudio.com:v3/jalbert-costco/angular-poc/random-app
