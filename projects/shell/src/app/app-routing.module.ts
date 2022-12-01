@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'iframe', component: IframeComponent },
   {
-    path: 'git-submodule',
+    path: 'remote-module',
     loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
   },
   { path: 'composed', component: ComposedComponent },

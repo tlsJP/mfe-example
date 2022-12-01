@@ -16,9 +16,3 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1;
-  gap: 10px;
-}
