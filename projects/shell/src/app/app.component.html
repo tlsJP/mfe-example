@@ -1,11 +1,16 @@
 <mat-toolbar class="mat-elevation-z10" color="primary">
-  Angular Micro Frontends
+  <button mat-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="admin">Admin</button>
+    <button mat-menu-item routerLink="dashboard">Dashboard</button>
+  </mat-menu>
+  <span>Angular Micro Frontends</span>
 </mat-toolbar>
-
-<a mat-raised-button color="primary" routerLink="/admin">Admin Page</a>
+<router-outlet></router-outlet>
+<!-- <a mat-raised-button color="primary" routerLink="/admin">Admin Page</a>
 
 <mat-slide-toggle> Toggle me! </mat-slide-toggle>
 
-<a mat-raised-button color="accent" routerLink="/dashboard">Dashboard</a>
-
-<router-outlet></router-outlet>
+<a mat-raised-button color="accent" routerLink="/dashboard">Dashboard</a> -->
