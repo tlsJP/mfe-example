@@ -14,6 +14,10 @@ const routes: Routes = [
   },
   { path: '', component: HomeComponent },
   { path: 'iframe', component: IframeComponent },
+  {
+    path: 'git-submodule',
+    loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
+  },
 ];
 
 @NgModule({
