@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ComposedComponent } from './composed/composed.component';
 import { HomeComponent } from './home/home.component';
 import { IframeComponent } from './iframe/iframe.component';
 
@@ -18,6 +19,7 @@ const routes: Routes = [
     path: 'git-submodule',
     loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
   },
+  { path: 'composed', component: ComposedComponent },
 ];
 
 @NgModule({

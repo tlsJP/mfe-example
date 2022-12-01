@@ -13,8 +13,10 @@ import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { IframeComponent } from './iframe/iframe.component';
+import * as AdminModule from 'projects/admin/src/app/app.module';
+import { ComposedComponent } from './composed/composed.component';
 @NgModule({
-  declarations: [AppComponent, HomeComponent, IframeComponent],
+  declarations: [AppComponent, HomeComponent, IframeComponent, ComposedComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -25,6 +27,7 @@ import { IframeComponent } from './iframe/iframe.component';
     MatIconModule,
     MatMenuModule,
     MatProgressSpinnerModule,
+    AdminModule.AppModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

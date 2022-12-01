@@ -8,10 +8,12 @@
     <button mat-menu-item routerLink="dashboard">Dashboard</button>
     <button mat-menu-item routerLink="iframe">iFrame</button>
     <button mat-menu-item routerLink="git-submodule">Git Submodule</button>
+    <button mat-menu-item routerLink="composed">Composed</button>
   </mat-menu>
   <span>Angular Micro Frontends</span>
   <span class="spacer"></span>
   v0.1.0
 </mat-toolbar>
-
-<router-outlet></router-outlet>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
