@@ -20,6 +20,11 @@ const routes: Routes = [
     loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
   },
   { path: 'composed', component: ComposedComponent },
+  {
+    path: 'amogus',
+    loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
+    outlet: 'amogus',
+  },
 ];
 
 @NgModule({

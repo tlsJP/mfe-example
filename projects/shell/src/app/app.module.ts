@@ -16,6 +16,7 @@ import { IframeComponent } from './iframe/iframe.component';
 import * as AdminModule from 'projects/admin/src/app/app.module';
 import * as DashboardModule from 'projects/dashboard/src/app/app.module';
 import { ComposedComponent } from './composed/composed.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +36,7 @@ import { ComposedComponent } from './composed/composed.component';
     MatProgressSpinnerModule,
     AdminModule.AppModule,
     DashboardModule.AppModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
