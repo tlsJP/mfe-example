@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTableModule } from '@angular/material/table';
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -12,6 +13,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     AppRoutingModule,
     MatCardModule,
     MatProgressBarModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
