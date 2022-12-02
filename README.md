@@ -11,3 +11,7 @@ https://github.com/oktadev/okta-angular-microfrontend-example
 ## Deploy local
 
 `$ npm run run:all` - starts the three applications
+
+## Notes
+
+Remote modules need to ensure that their `app-routing.moudles.ts` are updated to specify routes
