@@ -1,0 +1,3 @@
+[submodule "projects/mfe-amogus"]
+	path = projects/mfe-amogus
+	url = git@github.com:tlsJP/mfe-amogus.git

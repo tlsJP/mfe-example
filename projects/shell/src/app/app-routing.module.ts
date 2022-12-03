@@ -5,6 +5,8 @@ import { ComposedComponent } from './composed/composed.component';
 import { HomeComponent } from './home/home.component';
 import { IframeComponent } from './iframe/iframe.component';
 
+import { environment } from '../environments/environment';
+
 const routes: Routes = [
   {
     path: 'admin',
@@ -12,7 +14,7 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:3000/remoteEntry.js',
+        remoteEntry: environment.adminUrl,
         exposedModule: './Module',
       }).then((m) => m.AppModule),
   },
@@ -21,7 +23,7 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: '',
+        remoteEntry: environment.dashboardUrl,
         exposedModule: './Module',
       }).then((m) => m.AppModule),
   },
@@ -32,7 +34,7 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: 'http://localhost:3030/remoteEntry.js',
+        remoteEntry: environment.remoteUrl,
         exposedModule: './Module',
       }).then((m) => m.AppModule),
   },

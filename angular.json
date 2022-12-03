@@ -45,7 +45,13 @@
                 }
               ],
               "outputHashing": "all",
-              "extraWebpackConfig": "projects/shell/webpack.prod.config.js"
+              "extraWebpackConfig": "projects/shell/webpack.prod.config.js",
+              "fileReplacements": [
+                {
+                  "replace": "projects/shell/src/environments/environment.ts",
+                  "with": "projects/shell/src/environments/environment.prd.ts"
+                }
+              ]
             },
             "development": {
               "buildOptimizer": false,
