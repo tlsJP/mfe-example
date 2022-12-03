@@ -1,3 +1,4 @@
+import { loadRemoteModule } from '@angular-architects/module-federation';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ComposedComponent } from './composed/composed.component';
@@ -7,24 +8,35 @@ import { IframeComponent } from './iframe/iframe.component';
 const routes: Routes = [
   {
     path: 'admin',
-    loadChildren: () => import('admin/Module').then((m) => m.AppModule),
+
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:3000/remoteEntry.js',
+        exposedModule: './Module',
+      }).then((m) => m.AppModule),
   },
   {
     path: 'dashboard',
-    loadChildren: () => import('dashboard/Module').then((m) => m.AppModule),
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: '',
+        exposedModule: './Module',
+      }).then((m) => m.AppModule),
   },
   { path: '', component: HomeComponent },
   { path: 'iframe', component: IframeComponent },
   {
     path: 'remote-module',
-    loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:3030/remoteEntry.js',
+        exposedModule: './Module',
+      }).then((m) => m.AppModule),
   },
   { path: 'composed', component: ComposedComponent },
-  {
-    path: 'amogus',
-    loadChildren: () => import('randomApp/Module').then((m) => m.AppModule),
-    outlet: 'amogus',
-  },
 ];
 
 @NgModule({
