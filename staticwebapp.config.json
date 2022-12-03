@@ -4,10 +4,7 @@
     "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
   },
 
-  "routes": [
-    {
-      "route": "/admin",
-      "rewrite": "/index.html"
-    }
-  ]
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
 }
