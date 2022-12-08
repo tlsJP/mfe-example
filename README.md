@@ -18,6 +18,21 @@ https://github.com/oktadev/okta-angular-microfrontend-example
 
 `$ npm run run:all` - starts the three applications
 
+## Deploy Docker
+
+`$ ng build --project admin`
+
+`$ docker build -t mfe-admin -f projects/admin/Dockerfile .`
+
+`$ ng build --project dashboard`
+
+`$ docker build -t mfe-dashboard -f projects/dashboard/Dockerfile .`
+
+`$ ng build --project shell`
+
+`$ docker build -t mfe-shell -f projects/shell/Dockerfile .`
+
+
 ## Notes
 
 Remote modules need to ensure that their `app-routing.moudles.ts` are updated to specify routes
