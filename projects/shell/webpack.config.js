@@ -46,22 +46,22 @@ module.exports = {
         "@angular/core": {
           singleton: true,
           strictVersion: true,
-          requiredVersion: "auto",
+          requiredVersion: "^15.0.2",
         },
         "@angular/common": {
           singleton: true,
           strictVersion: true,
-          requiredVersion: "auto",
+          requiredVersion: "^15.0.2",
         },
         "@angular/common/http": {
           singleton: true,
           strictVersion: true,
-          requiredVersion: "auto",
+          requiredVersion: "^15.0.2",
         },
         "@angular/router": {
           singleton: true,
           strictVersion: true,
-          requiredVersion: "auto",
+          requiredVersion: "^15.0.2",
         },
 
         ...sharedMappings.getDescriptors(),
