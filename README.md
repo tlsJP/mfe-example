@@ -20,18 +20,8 @@ https://github.com/oktadev/okta-angular-microfrontend-example
 
 ## Deploy Docker
 
-`$ ng build --project admin`
-
-`$ docker build -t mfe-admin -f projects/admin/Dockerfile .`
-
-`$ ng build --project dashboard`
-
-`$ docker build -t mfe-dashboard -f projects/dashboard/Dockerfile .`
-
-`$ ng build --project shell`
-
-`$ docker build -t mfe-shell -f projects/shell/Dockerfile .`
-
+Just run the batch file...
+`> .\deploy_docker.bat`
 
 ## Notes
 

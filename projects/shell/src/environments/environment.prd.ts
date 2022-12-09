@@ -1,8 +1,6 @@
 export const environment = {
   production: true,
-  adminUrl: 'https://mango-rock-0c0243e1e.2.azurestaticapps.net/remoteEntry.js',
-  dashboardUrl:
-    'https://icy-moss-0f952f31e.2.azurestaticapps.net/remoteEntry.js',
-  remoteUrl:
-    'https://victorious-wave-0753d551e.2.azurestaticapps.net/remoteEntry.js',
+  adminUrl: 'http://localhost:5001/remoteEntry.js',
+  dashboardUrl: 'http://localhost:5002/remoteEntry.js',
+  remoteUrl: 'http://localhost:3030/remoteEntry.js',
 };
