@@ -17,12 +17,14 @@ import * as AdminModule from 'projects/admin/src/app/app.module';
 import * as DashboardModule from 'projects/dashboard/src/app/app.module';
 import { ComposedComponent } from './composed/composed.component';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { LoginComponent } from './login/login.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     IframeComponent,
     ComposedComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

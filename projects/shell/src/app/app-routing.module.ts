@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { IframeComponent } from './iframe/iframe.component';
 
 import { environment } from '../environments/environment';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,7 @@ const routes: Routes = [
       }).then((m) => m.AppModule),
   },
   { path: 'composed', component: ComposedComponent },
+  { path: 'login', component: LoginComponent },
 ];
 
 @NgModule({
