@@ -1,7 +1,14 @@
 <div class="grid-container">
   <div class="grid-item">
-    <mat-spinner color="accent"></mat-spinner>
+    <ng-container *ngIf="user; else spinner">
+      <img src={{user.photoURL}}>
+      <p></p>
+      {{ user.displayName }}
+    </ng-container>
   </div>
-
-  <h1 class="grid-item">Wheee!</h1>
 </div>
+
+<ng-template #spinner>
+  <mat-spinner color="accent"></mat-spinner>
+  Please sign in
+</ng-template>

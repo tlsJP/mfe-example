@@ -13,6 +13,9 @@
   <span>Angular Micro Frontends</span>
   <span class="spacer"></span>
   v0.1.0
+  <ng-container *ngIf="user">
+    <button mat-raised-button type="button" (click)="logout()">Logout</button>
+  </ng-container>
 </mat-toolbar>
 <div class="main">
   <router-outlet></router-outlet>
