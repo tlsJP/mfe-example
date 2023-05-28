@@ -13,12 +13,18 @@
   <span>Angular Micro Frontends</span>
   <span class="spacer"></span>
   v0.1.0
-  <ng-container *ngIf="user">
+  
     <div style="padding-left: 15px">
-      <button mat-raised-button type="button" (click)="logout()">Logout</button>
+      <ng-container *ngIf="user; else si">
+      <button mat-raised-button type="button" (click)="signOut()">Sign Out</button>
+    </ng-container>
     </div>
-  </ng-container>
+  
 </mat-toolbar>
 <div class="main">
   <router-outlet></router-outlet>
 </div>
+
+<ng-template #si>
+  <button mat-raised-button type="button" (click)="signIn()">Sign In</button>
+</ng-template>

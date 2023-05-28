@@ -17,11 +17,12 @@ import * as AdminModule from 'projects/admin/src/app/app.module';
 import * as DashboardModule from 'projects/dashboard/src/app/app.module';
 import { ComposedComponent } from './composed/composed.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { LoginComponent } from './login/login.component';
+
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,6 @@ import { environment } from '../environments/environment';
     HomeComponent,
     IframeComponent,
     ComposedComponent,
-    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -37,6 +37,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     MatSlideToggleModule,
     MatButtonModule,
+    MatCardModule,
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,

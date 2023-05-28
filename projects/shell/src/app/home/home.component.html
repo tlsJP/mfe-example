@@ -1,13 +1,24 @@
-<div class="grid-container">
-  <div class="grid-item">
-    <ng-container *ngIf="user; else spinner">
-      <img src={{user.photoURL}}>
-      <p></p>
-      {{ user.displayName }}
-    </ng-container>
-  </div>
-</div>
+<div class="mat-elevation-z10">
+  <mat-card>
 
+    <ng-container *ngIf="user; else spinner"> 
+      <mat-card-header>
+        <img
+          mat-card-avatar
+          src="{{ user.photoURL }}"
+          style="padding: 10px; background-size: cover"
+        />
+        <mat-card-title>
+          {{ user.displayName }}
+        </mat-card-title>
+        <mat-card-subtitle>
+          {{user.providerId}}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>Some interesting things</mat-card-content>
+    </ng-container>
+  </mat-card>
+</div>
 <ng-template #spinner>
   <mat-spinner color="accent"></mat-spinner>
   Please sign in
