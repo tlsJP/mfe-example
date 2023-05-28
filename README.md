@@ -16,9 +16,22 @@ https://blog.briebug.com/blog/micro-frontends-angular
 
 https://github.com/oktadev/okta-angular-microfrontend-example
 
+## Structure
+This project has four separate angular applications, one of which is a remote submodule.
+
+1. admin
+2. dashboard
+3. mfe-amogus (remote submodule)
+4. shell - host application
+
 ## Deploy local
 
-`$ npm run run:all` - starts the three applications
+`[project-root] $ npm run run:all` - starts the three colocated applications
+
+The remote submodule also needs to be started:
+
+`[project-root]/projects/mfe-amogus $ ng serve`
+
 
 ## Deploy Docker
 
