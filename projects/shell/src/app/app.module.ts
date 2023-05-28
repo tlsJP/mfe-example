@@ -18,6 +18,11 @@ import * as DashboardModule from 'projects/dashboard/src/app/app.module';
 import { ComposedComponent } from './composed/composed.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LoginComponent } from './login/login.component';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { provideAuth, getAuth } from '@angular/fire/auth';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +44,10 @@ import { LoginComponent } from './login/login.component';
     AdminModule.AppModule,
     DashboardModule.AppModule,
     MatGridListModule,
+
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent],

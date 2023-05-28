@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mfe-test-56609": {
+      "hosting": {
+        "shell": [
+          "mfe-test-56609"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mfe-test-56609"
+  }
+}
