@@ -10,16 +10,16 @@
     <button mat-menu-item routerLink="remote-module">Remote Module</button>
     <button mat-menu-item routerLink="composed">Composed</button>
   </mat-menu>
-  <span>Angular Micro Frontends</span>
+  <span>Micro Frontends</span>
   <span class="spacer"></span>
-  v0.1.0
-  
-    <div style="padding-left: 15px">
-      <ng-container *ngIf="user; else si">
-      <button mat-raised-button type="button" (click)="signOut()">Sign Out</button>
+
+  <div style="padding-left: 15px">
+    <ng-container *ngIf="user; else si">
+      <button mat-raised-button type="button" (click)="signOut()">
+        Sign Out
+      </button>
     </ng-container>
-    </div>
-  
+  </div>
 </mat-toolbar>
 <div class="main">
   <router-outlet></router-outlet>
