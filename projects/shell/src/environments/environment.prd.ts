@@ -8,7 +8,7 @@ export const environment = {
     messagingSenderId: '538702821484',
   },
   production: true,
-  adminUrl: 'http://localhost:5001/remoteEntry.js',
-  dashboardUrl: 'http://localhost:5002/remoteEntry.js',
-  amogusUrl: 'http://localhost:3030/remoteEntry.js',
+  adminUrl: 'https://mango-rock-0c0243e1e.2.azurestaticapps.net/remoteEntry.js',
+  dashboardUrl: 'https://icy-moss-0f952f31e.2.azurestaticapps.net/remoteEntry.js',
+  amogusUrl: 'https://jolly-pond-072d5711e.3.azurestaticapps.net/remoteEntry.js',
 };
