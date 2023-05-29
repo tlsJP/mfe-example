@@ -1,11 +1,11 @@
-<mat-grid-list cols="10" rowHeight="100px" style="width: 1900px">
+<mat-grid-list [cols]="breakpoint" rowHeight="100px" style="max-height:90vh;width: 100vw"(window:resize)="onResize($event)">
   <!-- <mat-grid-tile colspan="10" rowspan="8">
     <app-iframe class="tile"></app-iframe>
   </mat-grid-tile> -->
   <mat-grid-tile colspan="5" rowspan="7">
     <app-dashboard class="tile"></app-dashboard>
   </mat-grid-tile>
-  <mat-grid-tile colspan="3" rowspan="3">
+  <mat-grid-tile colspan="4" rowspan="4">
     <app-admin class="tile"></app-admin>
   </mat-grid-tile>
   <mat-grid-tile colspan="3" rowspan="3">
