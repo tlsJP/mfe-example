@@ -1,7 +1,6 @@
 <div class="mat-elevation-z10">
   <mat-card>
-
-    <ng-container *ngIf="user; else spinner"> 
+    <ng-container *ngIf="user; else spinner">
       <mat-card-header>
         <img
           mat-card-avatar
@@ -12,7 +11,7 @@
           {{ user.displayName }}
         </mat-card-title>
         <mat-card-subtitle>
-          {{user.providerId}}
+          {{ user.providerId }}
         </mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>Some interesting things</mat-card-content>
@@ -20,6 +19,8 @@
   </mat-card>
 </div>
 <ng-template #spinner>
-  <mat-spinner color="accent"></mat-spinner>
-  Please sign in
+  <div style="padding: 15px">
+    <mat-spinner color="accent"></mat-spinner>
+    <p>Please sign in</p>
+  </div>
 </ng-template>
