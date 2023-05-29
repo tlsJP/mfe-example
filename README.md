@@ -16,6 +16,8 @@ https://blog.briebug.com/blog/micro-frontends-angular
 
 https://github.com/oktadev/okta-angular-microfrontend-example
 
+https://github.com/angular/angularfire/blob/master/docs/auth.md
+
 ## Structure
 This project has four separate angular applications, one of which is a remote submodule.
 

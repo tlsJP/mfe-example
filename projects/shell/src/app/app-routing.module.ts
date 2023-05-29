@@ -34,7 +34,7 @@ const routes: Routes = [
     loadChildren: () =>
       loadRemoteModule({
         type: 'module',
-        remoteEntry: environment.remoteUrl,
+        remoteEntry: environment.amogusUrl,
         exposedModule: './Module',
       }).then((m) => m.AppModule),
   },
